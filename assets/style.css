@@ -1,0 +1,16 @@
+body {
+  background: #D3D3D3;
+  font-family: arial;
+}
+
+.jumbotron{
+  background: #060669;
+  color: white;
+  text-align: center;
+}
+
+.panel-heading {
+  background: #060669;
+}
+
+
