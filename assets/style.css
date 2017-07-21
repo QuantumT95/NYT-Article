@@ -1,0 +1,12 @@
+body {
+  background: #D3D3D3;
+}
+
+.jumbotron{
+  background: #000080;
+  color: white;
+}
+
+.panel-heading {
+  color: #000080;
+}
