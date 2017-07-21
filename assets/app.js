@@ -106,24 +106,19 @@ function runQuery(numArticles, queryURL){
         // End Year
         endYear = $('#endYear').val().trim();
 
-        // If the user provides a startYear -- the startYear will be included in the queryURL
         if (parseInt(startYear)) {
             queryURL = queryURL + "&begin_date=" + startYear + "0101";
         }
 
-        // If the user provides a startYear -- the endYear will be included in the queryURL
         if (parseInt(endYear)) {
             queryURL = queryURL + "&end_date=" + endYear + "0101";
         }
 
-        // Then we will pass the final queryURL and the number of results to include to the runQuery function
         runQuery(numResults, queryURL);
 
-        // This line allows us to take advantage of the HTML "submit" property. This way we can hit enter on the keyboard and it registers the search (in addition to clicks).
         return false;
     }); 
 
-// This button clears the top articles section
 $('#clearAll').on('click', function(){
     articleCounter = 0;
     $("#wellSection").empty();
