@@ -7,10 +7,52 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <body>
 
+<div class="container">
+	<div class="jumbotron">
+		<h1>New York Times Article Search</h1>
+	</div>
+
+	<div class="panel panel-default">
+		
+			<div class="panel-heading panel-primary">Search Parameters</div>
+				
+					<div class="form-group">
+						<label for="Search">Search Term:</label>
+		   				<input type="Search" class="form-control" id="Search">
+		   			</div>
+		   			<div class="form-group">
+    					<label for="numberRecord">Number of Records to Retrieve:</label>
+    					<input type="numberRecord" class="form-control" id="numberRecord">
+ 					 </div>
+ 					<div class="form-group">
+						<label for="startYear">Start Year(optional):</label>
+		   				<input type="startYear" class="form-control" id="startYear">
+		   			</div>
+		   			<div class="form-group">
+						<label for="endYear">End Year(optional):</label>
+		   				<input type="endYear" class="form-control" id="endYear">
+		   			</div>
+			</div>   	
+
+
+	<div class="panel panel-default">
+		<div class="panel-heading panel-secondary">Top Articles</div>
+			<div class="panel-body">
+				<div id="records"></div>
+			</div>
+
+
+
+	</div>
 
 
 
 
+
+
+
+
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="assets/app.js"></script>
